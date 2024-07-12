@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MEDIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sitename header">
+            <img src="logom.jpg">Workspace
+        </div>
+        <div class="searchbar">
+            <input type="search" placeholder="Search in Media" style="border: 2px solid; width: 250px; height: 40px;">
+            <input type="submit" value="search" style="border: 2px solid; margin: 2px; width: 50px; height: 30px;">
+        </div>
+        <div class="container2 menu">
+            <!-- <div class="home">
+                <img src="homel.jpg"><a href="home.html">Home</a>
+            </div>
+            <div class="customers">
+                <img src="customerl.jpg"><a href="customer.html">Customers</a>
+            </div>
+            <div class="departments">
+                <img src="departmentl.jpg"><a href="customer.html">Departments</a>
+            </div>
+            <div class="media">
+                <img src="medial2.jpg"><a href="customer.html">Media</a>
+            </div> -->
+            
+                    <div class="home">
+                        <img src="homel.jpg">
+                        <a class="" href="home.html" onClick="activeHome()" id="home">Home</a>
+                    </div>
+
+                    <div class="customers">
+                        <img src="customerl.jpg">
+                        <a class="" href="customer.html" onClick="activeCustomers()" id="customers">Customers</a>
+                    </div>
+
+                    <div class="departments">
+                        <img src="departmentl.jpg">
+                        <a class="" href="department.html" onClick="activeDepartments()" id="departments">Departments</a>
+                    </div>
+
+                    <div class="media">
+                        <img src="medial2.jpg">
+                        <a class="active" href="media.html" onClick="activeMedia()" id="media">Media</a>
+                    </div>
+                    <div class="myaccount">
+                        <img src="accountl.jpg">
+                        <a class="" href="account.html" onClick="activeAccount()" id="account">My Account</a>
+                    </div>
+                    
+                <script type="text/javascript">
+                    function activeHome(){
+                        document.getElementById("home").clickList.add("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeCustomers(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.add("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeDepartments(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.add("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeMedia(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.add("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeCustomers(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.add("active");
+                    }
+                </script>
+        </div>
+        <div class="container5">
+            <div class="i">Images</div>
+            <div class="ci">
+                <div class="container6">
+                    <img src="im1.jpg">
+                    <img src="im2.jpg">
+                    <img src="im3.jpg">
+                </div>
+                <div class="container6">
+                    <img src="im4.jpg">
+                    <img src="im5.jpg">
+                    <img src="im6.jpg">
+                </div>
+            </div>
+            <div class="v">Videos</div>
+            <div class="cv">
+                <div class="container6">
+                    <iframe width="350" height="350" src="https://www.youtube.com/embed/KGMnmNk141I" title="The Most Functional Desk Accessory I&#39;ve Seen So Far! 🤯" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="350" height="350" src="https://www.youtube.com/embed/G2b7dORf5-0" title="Google Workspace" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="350" height="350" src="https://www.youtube.com/embed/RvkIsfxhNeY" title="Work mode activated ☑️ #desksetup #workspace #productivity #coffee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="a">Audio</div>
+            <div class="ca">
+                <div class="container6">
+                    <audio controls>
+                        <source src="audio1.wav" type="audio/ogg">
+                    </audio>
+                    <audio controls>
+                        <source src="audio2.wav" type="audio/ogg">
+                    </audio>
+                    <audio controls>
+                        <source src="audio3.wav" type="audio/ogg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

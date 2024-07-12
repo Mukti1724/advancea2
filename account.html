@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myaccount</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sitename header">
+            <img src="logom.jpg">Workspace
+        </div>
+        <div class="searchbar">
+            <input type="search" placeholder="Search in My Accounts" style="border: 2px solid; width: 250px; height: 40px;">
+            <input type="submit" value="search" style="border: 2px solid; margin: 2px; width: 50px; height: 30px;">
+        </div>
+        <div class="container2 menu">
+            <!-- <div class="home">
+                <img src="homel.jpg"><a href="home.html">Home</a>
+            </div>
+            <div class="customers">
+                <img src="customerl.jpg"><a href="customer.html">Customers</a>
+            </div>
+            <div class="departments">
+                <img src="departmentl.jpg"><a href="customer.html">Departments</a>
+            </div>
+            <div class="media">
+                <img src="medial2.jpg"><a href="customer.html">Media</a>
+            </div> -->
+            
+                    <div class="home">
+                        <img src="homel.jpg">
+                        <a class="" href="home.html" onClick="activeHome()" id="home">Home</a>
+                    </div>
+
+                    <div class="customers">
+                        <img src="customerl.jpg">
+                        <a class="" href="customer.html" onClick="activeCustomers()" id="customers">Customers</a>
+                    </div>
+
+                    <div class="departments">
+                        <img src="departmentl.jpg">
+                        <a class="" href="department.html" onClick="activeDepartments()" id="departments">Departments</a>
+                    </div>
+
+                    <div class="media">
+                        <img src="medial2.jpg">
+                        <a class="" href="media.html" onClick="activeMedia()" id="media">Media</a>
+                    </div>
+                    <div class="myaccount">
+                        <img src="accountl.jpg">
+                        <a class="active" href="account.html" onClick="activeAccount()" id="account">My Account</a>
+                    </div>
+                    
+                <script type="text/javascript">
+                    function activeHome(){
+                        document.getElementById("home").clickList.add("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeCustomers(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.add("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeDepartments(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.add("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeMedia(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.add("active");
+                        document.getElementById("account").clickList.remove("active");
+                    }
+                    function activeCustomers(){
+                        document.getElementById("home").clickList.remove("active");
+                        document.getElementById("customers").clickList.remove("active");
+                        document.getElementById("departments").clickList.remove("active");
+                        document.getElementById("media").clickList.remove("active");
+                        document.getElementById("account").clickList.add("active");
+                    }
+                </script>
+        </div>
+        <div class="container5">
+            <div class="ci">
+                <div class="container6">
+                    <img src="im1.jpg">
+                </div>
+                <form action="javascript:submitForm()">
+                    <div class="name">
+                        Name<br>
+                        <input type="text" placeholder="Mukti Gouda">
+                    </div>
+                    <div class="email">
+                        Email<br>
+                        <input type="email" placeholder="mukti@gmail.com">
+                    </div>
+                    <div class="number">
+                        Phone Number<br>
+                        <input type="text" placeholder="8895546286">
+                    </div>
+                    <div class="dob">
+                        Date Of Birth<br>
+                        <input type="date">
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="save">Save</button>
+                        <button type="reset" class="cancel">Cancel</button>
+                    </div>
+                    <script>
+                        function submitForm(){
+                            window.alert("Form Submitted")
+                        }
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

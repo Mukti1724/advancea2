@@ -1,10 +1,7 @@
-/* .menu{ */
-    /* height: 60px; */
-    /* padding: 0; */
-    /* margin: 0; */
-    /* position: absolute; */
-    /* border-right: 1px solid #54879d; */
-/* } */
+.menu{
+    /* background-color: rgb(4, 106, 12); */
+    overflow: hidden;
+}
 /* .wrap{ */
     /* display: flex; */
     /* flex-direction: column; */
@@ -14,25 +11,27 @@
     /* background: #125e1d; */
 /* } */
 .menu a{
-    /* padding: 22px; */
-    /* border-left: 1px solid #6e9ddb;
-    border-right: 1px solid #15f065; */
     text-decoration: none;
-    color: rgb(24, 49, 118);
+    color: rgb(108, 143, 238);
     display: block;
 }
 .menu a:hover{
     background-color: #32f4dd;
 }
+.menu a.active{
+    color: black;
+    background-color: white;
+}
     
 body{
-    background-image: url('./logom.jpg');
+    background-image: url('./background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 200vh;
 }
     .header{
         display: flex;
+        color: rgb(108, 143, 238);
         /* background-color: whitesmoke; */
     }
     .container{
@@ -70,7 +69,7 @@ body{
         /* background-color: whitesmoke; */
     }
     .home{
-        font-size: 50px;
+        font-size: 40px;
         display: flex;
         /* border: solid; */
         grid-row: 1/2;
@@ -81,7 +80,7 @@ body{
         height: 50px;
     }
     .customers{
-        font-size: 50px;
+        font-size: 40px;
         display: flex;
         /* border: solid; */
         grid-row: 2/3;
@@ -92,7 +91,7 @@ body{
         height: 50px;
     }
     .departments{
-        font-size: 50px;
+        font-size: 40px;
         display: flex;
         /* border: solid; */
         grid-row: 3/4;
@@ -103,7 +102,7 @@ body{
         height: 50px;
     }
     .media{
-        font-size: 50px;
+        font-size: 40px;
         display: flex;
         /* border: solid; */
         grid-row: 4/5;
@@ -114,7 +113,7 @@ body{
         height: 50px;
     }
     .myaccount{
-        font-size: 50px;
+        font-size: 40px;
         display: flex;
         /* border: solid; */
         grid-row: 6/7;
@@ -167,10 +166,12 @@ body{
     }
     .cb{
         font-size: 50px;
+        color: black;
         background-color: #fbef46;
     }
     .db{
         font-size: 50px;
+        color: black;
         background-color: #fbef46;
     }
     .mb{
@@ -181,12 +182,14 @@ body{
         font-size: 40px;
         text-align: left;
         padding: 5px;
+        color: antiquewhite;
     }
     .ddetail{
         grid-area: d;
         font-size: 40px;
         text-align: left;
         padding: 5px;
+        color: antiquewhite;
     }
     .mdetail{
         grid-area: m;
@@ -199,7 +202,7 @@ body{
       border : 1px solid black;
       border-radius: 30px;
       border-collapse: collapse;
-      background-image: url('./homel.jpg');
+      /* background-image: url('./homel.jpg'); */
       /* background-color: rgb(145, 253, 137); */
     }
     th {
@@ -237,4 +240,87 @@ body{
         font-size: 40px;
         background-color: rgb(252, 236, 9);        
         /* background-color: chartreuse;         */
+    }
+    /* page4 */
+    .container5{
+        display: grid;
+        grid-template-areas: "i i i" "ci ci ci" "v v v" "cv cv cv" "a a a" "ca ca ca";
+        padding: 10px;
+    }
+    .container6{
+        display: grid;
+        padding: 30px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 30px;
+    }
+    .container6 img{
+        width: 350px;
+        height: 350px;
+        border-radius: 30px;
+    }
+    .i{
+        grid-area: i;
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        border-radius: 30px;
+        background-color: rgb(244, 169, 40);
+    }
+    .ci{
+        grid-area: ci;
+    }
+    .v{
+        grid-area: v;
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        border-radius: 30px;
+        background-color: rgb(244, 169, 40);
+    }
+    .cv{
+        grid-area: cv;
+    }
+    .a{
+        grid-area: a;
+        font-size: 40px;
+        padding: 10px;
+        color: white;
+        border-radius: 30px;
+        background-color: rgb(244, 169, 40);
+    }
+    .ca{
+        grid-area: ca;
+    }
+    .save{
+        background-color: rgb(41, 205, 41);
+        font-size: 25px;
+    }
+    .cancel{
+        background-color: rgb(240, 72, 72);
+        font-size: 25px;
+    }
+    .submit{
+        margin: 20px;
+        font-size: 20px;
+    }
+    .name{
+        font-size: 30px;
+        color: white;
+        padding: 20px;
+    }
+    .email{
+        font-size: 30px;
+        color: white;
+        padding: 20px;
+    }
+    .number{
+        font-size: 30px;
+        color: white;
+        padding: 20px;
+    }
+    .dob{
+        font-size: 30px;
+        color: white;
+        padding: 20px;
     }
